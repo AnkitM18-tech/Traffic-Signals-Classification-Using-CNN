@@ -111,7 +111,7 @@ def preprocessing(img):
     img = img/255            # TO NORMALIZE VALUES BETWEEN 0 AND 1 INSTEAD OF 0 TO 255
     return img
  
-X_train=np.array(list(map(preprocessing,X_train)))  # TO IRETATE AND PREPROCESS ALL IMAGES
+X_train=np.array(list(map(preprocessing,X_train)))  # TO ITERATE AND PREPROCESS ALL IMAGES
 X_validation=np.array(list(map(preprocessing,X_validation)))
 X_test=np.array(list(map(preprocessing,X_test)))
 cv2.imshow("GrayScale Images",X_train[random.randint(0,len(X_train)-1)]) # TO CHECK IF THE TRAINING IS DONE PROPERLY
